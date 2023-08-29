@@ -1,5 +1,6 @@
 import {
     Card,
+    CardHeader,
     CardBody,
     CardFooter,
     Typography,
@@ -8,31 +9,41 @@ import {
 
 interface CardWithLinkProps {
     title: string;
+    link: string;
+    logo: string;
+    description: string;
 }
 
-export function CardWithLink({title}: CardWithLinkProps) {
+export function CardDefault({ title, link, logo, description }: CardWithLinkProps) {
     return (
         <Card className="mt-6 w-96">
-            <CardBody>
+            <CardHeader className="relative h-64 flex items-center justify-center">
+                <img
+                    src={'/' + logo}
+                    alt="card-image"
+                    className="h-64"
+                />
 
+            </CardHeader>
+            <CardBody>
                 <Typography variant="h5" color="blue-gray" className="mb-2">
                     {title}
                 </Typography>
                 <Typography>
-                English Literary and Debate Society, the frontier for the love of english.
+                    {description}
                 </Typography>
             </CardBody>
             <CardFooter className="pt-0">
-                <a href="#" className="inline-block">
-                    <Button size="sm" variant="text" className="flex items-center gap-2">
-                        Learn More
+                <a href={link}>
+                    <Button variant="text" className="flex items-center gap-2">
+                        Read More{" "}
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
                             strokeWidth={2}
                             stroke="currentColor"
-                            className="h-4 w-4"
+                            className="h-5 w-5"
                         >
                             <path
                                 strokeLinecap="round"

@@ -8,7 +8,13 @@ export default withMT({
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#3490dc',    // Blue color for primary elements
+        secondary: '#6b7280',  // Gray color for secondary elements
+        gray: '#718096',       // Lighter gray for text
+      },
+    },
   },
   plugins: [],
 });
