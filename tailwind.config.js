@@ -10,7 +10,7 @@ export default withMT({
   theme: {
     extend: {
       colors: {
-        primary: '#3490dc',    // Blue color for primary elements
+        primary: '#E3F4F4',    // Blue color for primary elements
         secondary: '#6b7280',  // Gray color for secondary elements
         gray: '#718096',       // Lighter gray for text
       },

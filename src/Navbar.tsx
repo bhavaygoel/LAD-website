@@ -19,7 +19,9 @@ import {
             <img src="/nitkkr.png" alt="" className="h-24"/>
           </Typography>
             <Typography>
-                National Institute of Technology, Kurukshetra
+                <div className="text-2xl">
+                  National Institute of Technology, Kurukshetra
+                  </div>
             </Typography>
         </div>
       </Navbar>
